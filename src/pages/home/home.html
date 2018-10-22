@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Discos
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,7 +11,7 @@
   <ion-card style="background-color: #5BC3EB">
     <ion-row>
         <ion-col>
-          <img src= "../assets/Foster-The-People-Supermodel-2014-1200x1200.png">
+          <img  (click)="clickcaratulaSUP()" src= "../assets/Foster-The-People-Supermodel-2014-1200x1200.png">
         </ion-col>
 
         <ion-col>
@@ -19,11 +19,12 @@
             <p (click) = "clickSupermodel()" >Supermodel</p>
             <p> 2014 </p>
 
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
+            <ion-icon (click) = "clickRES1()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES1()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES1()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES1()" name="star"></ion-icon>
+            
+            
 
             <p> 
             <button ion-button icon-start clear small>
@@ -39,18 +40,19 @@
   <ion-card style="background-color: #224756 ">
     <ion-row>
         <ion-col>
-          <img src= "../assets/The CURE.jpg">
+          <img  (click) = "clickCUR()" src= "../assets/The CURE.jpg">
         </ion-col>
 
         <ion-col>
             <h2 (click) = "clickCURE()">The Cure</h2>
-            <p (click) = "clickFWN()">Boys Don't Cry</p>
+            <p (click) = "clickboys()">Boys Don't Cry</p>
             <p> 1980 </p>
 
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
+            <ion-icon (click) = "clickRES2()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES2()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES2()" name="star"></ion-icon>
+            <ion-icon (click) = "clickRES2()" name="star"></ion-icon>
+            
            
 
             <p> 
@@ -63,22 +65,21 @@
       </ion-card>   
 
 
-      <ion-card style="background-color: gray">
+      <ion-card style="background-color: #C7D6E9" (click) = "clickBLAF()">
         <ion-row>
             <ion-col>
-              <img src= "../assets/Favorite Worst Nightmare.jpg">
+              <img src= "../assets/Black Keys.jpg">
             </ion-col>
     
             <ion-col>
-                <h2 (click) = "clickArctic()">Arctic Monkeys</h2>
-                <p (click) = "clickFWN()" >Favorite Worst Nightmare</p>
-                <p> 2007 </p>
+                <h2 (click) = "clickBLACK()">Black Keys</h2>
+                <p (click) = "clickBROTHERS()" >Brothers</p>
+                <p> 2010 </p>
     
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
+                <ion-icon (click) = "clickRES3()" name="star"></ion-icon>
+                <ion-icon (click) = "clickRES3()" name="star"></ion-icon>
+                <ion-icon (click) = "clickRES3()" name="star"></ion-icon>
+                <ion-icon (click) = "clickRES3()" name="star"></ion-icon>
     
                 <p> 
                 <button ion-button icon-start clear small>
@@ -89,7 +90,7 @@
            </ion-row> 
            </ion-card>   
 
-           <ion-card style="background-color: gray">
+           <ion-card style="background-color: #464646">
             <ion-row>
                 <ion-col>
                   <img src= "../assets/Favorite Worst Nightmare.jpg">
