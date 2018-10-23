@@ -15,6 +15,7 @@ import { Reseña3Page } from '../rese\u00F1a3/rese\u00F1a3';
 import { ArcticPage } from '../arctic/arctic';
 import { CaratulAarcticPage } from '../caratul-aarctic/caratul-aarctic';
 import { FwdPage } from '../fwd/fwd';
+import { Reseña4Page } from '../rese\u00F1a4/rese\u00F1a4';
 
 @Component({
   selector: 'page-home',
@@ -37,6 +38,7 @@ export class HomePage {
   Mon= ArcticPage;
   Fav = CaratulAarcticPage;
   N = FwdPage;
+  U = Reseña4Page;
 
   constructor(public navCtrl: NavController) {
 
@@ -132,7 +134,14 @@ export class HomePage {
 
 
     }
+     
+    clickRES4(){
 
+      this.navCtrl.push(this.U);
+
+
+
+    }
   
 
 }
