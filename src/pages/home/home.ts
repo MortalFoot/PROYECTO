@@ -11,6 +11,7 @@ import { Reseña2Page } from '../rese\u00F1a2/rese\u00F1a2';
 import { KeysPage } from '../keys/keys';
 import { BrothersPage } from '../brothers/brothers';
 import { CaratulaBrothersPage } from '../caratula-brothers/caratula-brothers';
+import { Reseña3Page } from '../rese\u00F1a3/rese\u00F1a3';
 
 @Component({
   selector: 'page-home',
@@ -29,6 +30,7 @@ export class HomePage {
   BLA = KeysPage;
   BRO = BrothersPage;
   BS = CaratulaBrothersPage;
+  R3 = Reseña3Page;
 
 
   constructor(public navCtrl: NavController) {
@@ -95,10 +97,20 @@ export class HomePage {
 
   }
 
+   clickBROTHERS(){
+
+
+   this.navCtrl.push(this.BS);
+
+   }
+
   clickRES3(){
   
-   this.navCtrl.push(this.BS);
+   this.navCtrl.push(this.R3);
   }
+
+
+  
   
 
 }
