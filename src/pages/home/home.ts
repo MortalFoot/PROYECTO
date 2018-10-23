@@ -12,6 +12,9 @@ import { KeysPage } from '../keys/keys';
 import { BrothersPage } from '../brothers/brothers';
 import { CaratulaBrothersPage } from '../caratula-brothers/caratula-brothers';
 import { Reseña3Page } from '../rese\u00F1a3/rese\u00F1a3';
+import { ArcticPage } from '../arctic/arctic';
+import { CaratulAarcticPage } from '../caratul-aarctic/caratul-aarctic';
+import { FwdPage } from '../fwd/fwd';
 
 @Component({
   selector: 'page-home',
@@ -31,7 +34,9 @@ export class HomePage {
   BRO = BrothersPage;
   BS = CaratulaBrothersPage;
   R3 = Reseña3Page;
-
+  Mon= ArcticPage;
+  Fav = CaratulAarcticPage;
+  N = FwdPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -109,8 +114,25 @@ export class HomePage {
    this.navCtrl.push(this.R3);
   }
 
+    clickArctic(){
 
+    this.navCtrl.push(this.Mon);
+
+    }
+   
+    clickFWN(){
+
+    this.navCtrl.push(this.Fav);
+
+    }
   
+    clickFWA(){
+     
+      this.navCtrl.push(this.N);
+
+
+    }
+
   
 
 }
